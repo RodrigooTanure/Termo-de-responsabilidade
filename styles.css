@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'poppins', sans-serif;
+    background-image: url('Piraque_Aerea (2).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.logo-decn {
+    position: absolute;
+    right: -60px;
+    top: 200px;
+    width: 220px;
+    filter: drop-shadow(.0rem .0rem .9rem #e23);
+    transform: rotate(90deg);
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+}
+
+select {
+    outline: none;
+    border: none;
+}
+
+input,
+select {
+    width: 50%;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    box-shadow: 0 0 0 1px black;
+    background-color: rgba(255, 255, 255, 0.708);
+    transition: 200ms;
+}
+
+select:focus,
+input:focus {
+    box-shadow: 0 0 0 2px #0055a4;
+    /* background-color: #c47001; */
+}
+
+.nome-soc,
+.mat-soc,
+.data-comeco,
+.data-fim,
+.horario-comeco,
+.horario-fim,
+.gerente-input,
+.salao {
+    position: relative;
+    /* margin-top: 10px; */
+}
+
+main {
+    position: relative;
+    font-weight: 700;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    font-size: 2.5em;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+}
+
+.asdad {
+    background-color: rgba(0, 0, 0, 0.441);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(1px);
+}
+
+.dados-socios {
+    background-color: rgba(255, 255, 255, 0.708);
+    padding: 20px;
+    width: 40%;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.gerente-input,
+.salao {
+    margin-top: 20px;
+}
+
+@media print {
+
+    body {
+        background-image: none !important;
+    }
+
+    main {
+        display: none;
+    }
+
+    .asdad {
+        display: none;
+    }
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imp {
+    /*  */
+    border-radius: 8px;
+}
+
+.btn-danger {
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: 1px solid transparent;
+    text-decoration: none;
+    position: relative;
+    top: 10px;
+    transition: 200ms;
+}
+
+.btn-danger:hover {
+    background-color: #fff;
+    color: #dc3545;
+    border: 1px solid #dc3545;
+}
+
+#adicionar-dados {
+    margin-right: 20px;
+    font-weight: 700;
+    background-color: green;
+    color: #eee;
+    box-shadow: 1px 1px black;
+    letter-spacing: 2px;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+#adicionar-dados:hover {
+    background-color: white;
+    color: green;
+}
+
+#imprimir {
+    padding: 7px 10px;
+    cursor: not-allowed;
+    background-color: rgb(194, 1, 1);
+    color: white;
+    box-shadow: 1px 1px black;
+    transition: 200ms;
+}
+
+/* #imprimir:hover {
+    background-color: white;
+    color: rgb(194, 1, 1);
+} */
+
+/* IMPRIMIR ============================================ */
+
+.impressao {
+    font-size: .8em;
+    display: none;
+    background-color: #fff;
+    position: relative;
+}
+
+.imp-header {
+    text-align: center;
+}
+
+.datas {
+    font-weight: 700;
+}
+
+.imp-header img {
+    width: 80px;
+}
+
+.sec-01 {
+    margin-top: 30px;
+}
+
+.linha {
+    display: inline-block;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+.data {
+    display: inline-block;
+    width: 20%;
+    border: 1px solid red;
+}
+
+.tam01 {
+    width: 20px;
+    visibility: hidden;
+}
+
+.obs {
+    width: 100%;
+    width: 6%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.tam02 {
+    width: 35px;
+    visibility: hidden;
+}
+
+.tam100 {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.tam93 {
+    width: 93%;
+    position: relative;
+    left: 6px;
+}
+
+.assinar {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 110px;
+
+}
+
+.socio,
+.gerente {
+    width: 35%;
+    border-top: 1px solid black;
+}
+
+.nome-gerente,
+.nome-mat-soc {
+    text-align: center;
+}
+
+.gerente {
+    position: relative;
+    bottom: 2px;
+}
+
+hr {
+    border: 2px solid black;
+}
+
+.sec-02 {
+    position: relative;
+}
+
+.sec-02 .simnao {
+    position: relative;
+    border: 1px yellow;
+}
+
+.blocos {
+    position: absolute;
+    display: flex;
+    width: 200px;
+    /* border: 1px solid red; */
+    justify-content: space-around;
+    text-align: center;
+    top: 100px;
+    left: 0px;
+}
+
+.blocos .bloco-sim,
+.bloco-nao {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+}

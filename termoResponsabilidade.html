@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termo de Responsabilidade</title>
+    <script src="script.js" defer></script>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" href="logo_decn-removebg-preview.png">
+</head>
+
+<body>
+    <div class="asdad"></div>
+    <main>
+        <img src="logo3.png" class="logo-decn">
+        <h1>TERMO DE RESPONSABILIDADE</h1>
+        <div class="dados-socios">
+            <div class="nome-soc">
+                <label for="nome-socio">NOME DO SÓCIO:</label>
+                <input type="text" id="nome-socio" placeholder="Nome do sócio..." autofocus>
+            </div><br>
+
+            <div class="mat-soc">
+                <label for="mat-socio">MATRÍCULA DO SÓCIO:</label>
+                <input type="number" id="mat-socio" placeholder="Matrícula do sócio. Contém 8 dígitos" maxlength="8">
+            </div><br><br>
+
+            <div class="data-comeco">
+                <label for="data-comeco">DATA DE ÍNICIO</label>
+                <input type="date" id="data-comeco">
+            </div><br>
+
+            <div class="data-fim">
+                <label for="data-fim">DATA DE TÉRMINO</label>
+                <input type="date" id="data-fim">
+            </div><br><br>
+
+            <div class="horario-comeco" style="margin-top: -25px;">
+                <br><label for="hora-comeco">HORARIO DE INÍCIO:</label>
+                <input type="time" id="hora-comeco">
+            </div><br>
+
+            <div class="horario-fim">
+                <label for="hora-fim">HORARIO DE TÉRMINO:</label>
+                <input type="time" id="hora-fim">
+            </div><br>
+
+            <div class="salao">
+                <label for="salao">SALÃO:</label>
+                <select id="salao-select">
+                    <option selected="selected" disabled value="x">Escolha o Salão...</option>
+                    <option value="SALÃO ESCUNA">Salão Escuna</option>
+                    <option value="CHALANA">Chalana</option>
+                    <option value="GALERA">Galera</option>
+                    <option value="DECK GALERA">Deck Galera</option>
+                    <option value="CAPITÂNIA">Capitânia</option>
+                    <option value="DECK CAPITÂNIA">Deck Capitânia</option>
+                    <option value="CHURRASQUEIRA">Churrasqueira</option>
+                </select>
+            </div>
+
+            <div class="gerente-input">
+                <label for="gerente">GERENTE:</label>
+                <select id="gerente">
+                    <option selected="selected" disabled value="x">Escolha o Gerente...</option>
+                    <option value="Ana Luiza T. de Souza">Ana Tanure</option>
+                    <option value="Anízio Da S. Elias">Anízio</option>
+                    <option value="Eduardo F. de Moura">Eduardo</option>
+                    <option value="Jonathan B. Almeida">Jonathan</option>
+                    <option value="Micheline Pereira da Silva">Micheline</option>
+                    <option value="Rafael Braz do Nascimento">Rafael</option>
+                    <option value="Vagner Ribeiro Henriques">Vagner</option>
+                    <option value="Valmara Cristina S. Junior">Walmara</option>
+                </select>
+            </div>
+            <br>
+            <div class="btns">
+                <div>
+                    <a href="../programação esportiva/PRG ESPORTIVA V 1.0.html" class="btn-danger">Programação esportiva</a>
+                </div>
+                <div>
+                    <button class="imp" id="adicionar-dados"
+                        style="padding: 12px 10px; transform: translateY(-7px);">ADICIONAR DADOS</button>
+                    <button class="imp" id="imprimir"><span class="material-symbols-outlined" id="imp">
+                            print_disabled
+                        </span></button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+    <div class="impressao">
+        <div class="imp-header">
+            <img src="cropped-logo-small-3 (1).png">
+            <h2>CLUBE NAVAL<br>DEPARTAMENTO ESPORTIVO</h2>
+        </div>
+        <div class="sec-01">
+            <h2 style="text-align: center; transform: translateY(-20px);">TERMO DE RESPONSABILIDADE</h2>
+            <p class="datas">DATA: <span id="data-inicial"></span></p><br>
+            <p>1 - Declaro que estou ciente das normas e procedi a vistoria do(a) <b><span id="salao" style="text-decoration: underline;"></span></b>
+                (local da festa) acompanhado pelo Gerente do Clube, responsabilizando-me pela conservação do salão.</p><br> 
+            <p>Ás: <b><span id="hora-inicial"></span></b></p>
+            <br>
+            <p>
+                <span class="obs">Obs.:</span> <span class="linha tam93"></span><span class="linha tam100"></span><span
+                    class="linha tam100"></span>
+            </p>
+        </div>
+
+        <div class="assinar">
+            <div class="socio">
+                <div class="assinatura"></div>
+                <div class="nome-mat-soc">
+                    <span class="nome-socInner" style="text-transform: uppercase;"></span><br>
+                    <span>Matrícula - <span id="mat-soc"></span>(Sócio contratante)</span>
+                </div>
+            </div>
+            <div class="gerente">
+                <div class="assinatura"></div>
+                <div class="nome-gerente">
+                    <span id="nome-gerente"></span><br>
+                    <span>Confere</span> <span> (gerente)</span>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="sec-02">
+            <div class="blocos">
+                <div class="sim">
+                    SIM
+                    <div class="bloco-sim"></div>
+                </div>
+                <div class="nao">
+                    NÃO
+                    <div class="bloco-nao"></div>
+                </div>
+            </div>
+            <p class="datas">DATA: <span id="data-final"></span></p><br>
+            <p>2-Vistoria após a festa (O local tem que estar como recebeu, limpo e arrumado):</p><br>
+            <p class="simnao">
+                a) Nas mesmas condições anteriores?
+
+            </p>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <p style="margin-top: 20px;">Ás: <b><span id="hora-final"></span></b></p>
+            <br>
+            <p>
+                <span class="obs">Obs.:</span> <span class="linha tam93"></span><span class="linha tam100"></span><span
+                    class="linha tam100"></span>
+            </p>
+            <br>
+            <p>3 - O não cumprimento do item 2, será cobrado uma multa de 40% do valor da reserva do espaço.</p>
+            <div class="assinar">
+                <div class="socio">
+                    <div class="assinatura"></div>
+                    <div class="nome-mat-soc">
+                        <span id="nome-socInner02" style="text-transform: uppercase;"></span><br>
+                        <span>Matrícula - <span id="mat-soc02"></span>(Sócio contratante)</span>
+                    </div>
+                </div>
+                <div class="gerente" style="position: relative; bottom: 20px;">
+                    <div class="assinatura"></div>
+                    <div class="nome-gerente">
+                        <!-- <span id="nome-gerente">qweqwe qweqeqe</span><br> -->
+                        <span>Confere</span> <span> (gerente)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+</body>
+
+</html>
