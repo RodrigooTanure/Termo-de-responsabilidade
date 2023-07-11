@@ -26,6 +26,12 @@ const nomeGerenteInner = document.querySelector('#nome-gerente');
 
 let p = false;
 
+matSoc.addEventListener("keypress", function(e) {
+    if(matSoc.value.length == 8) {
+        e.preventDefault();
+    }
+})
+
 document.querySelector('#adicionar-dados').addEventListener('click', () => {
     addDados();
 });
